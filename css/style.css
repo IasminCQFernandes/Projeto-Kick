@@ -41,51 +41,196 @@
     height: 95vh;
 
 }
-.sobre h2{
+.sobre h2, .equipe h2, .agendamento h2, .contato h2{
     font-weight: 200;
     text-align: center;
+    font-size: 2em;
     padding: 4%;
+    color: #fff;
 }
-.descricao{
-    width: 70%;
+.descricao, .membros{
+    width: 80%;
     margin: auto;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .descricao p{
-    position: absolute;
-    width: 400px;
-    top: 120%;
-    left: 50%;
+    display: flex;
+    width: 50%;
+    height: 350px;
+    font-size: 1.2em;
     background-color: #111;
     padding: 3%;
-    animation: animacao2 2s    ease-in-out;
+    align-items: center;
+
 }
 .descricao img{
-    width: 300px;
-    position: absolute;
-    left: 29%;
-    top: 126%;
-    z-index: 1;
-    animation: animacao 2s    ease-in-out;
+    width: 50%;
+    height: 300px;
+    position: relative;
+    right: -20px;
+
+}
+
+.equipe{
+    height: 95vh;
+    background-color: #111111;
+    width: 100% ;
+    color: #fff;
+}
+.membros{
+    background-color: #1C1C1C;
+    justify-content: space-around;
+    padding: 10px;
+}
+.membros p{
+    text-align: center;
+    font-size: 0.7em;
 }
 
 
-@keyframes animacao {
-    0%{
-        left: 20%;
-    }
-    100%{
-        left: 30%;
-    }
+.agendamento{
+    height: 95vh;
+    background-color: #1C1C1C;
+    width: 100% ;
+    color: #fff;
+}
+.agenda{
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #111111;
+
+
+}
+.agenda h3, .agenda h5{
+    font-weight: 200;
+    margin: 15px 0 0 15px ;
+}
+.form{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 50px;
 }
 
-@keyframes animacao2 {
-    0%{
-        left: 70%;
-    }
-    100%{
-        left: 50%;
-    }
+.dados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.dados img{
+    width: 10%;
+    margin-right: 10px;
+
+}
+label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
+input{
+     border-radius: 10px;
+     border: none;
+     background-color: #d9d9d952;
+     padding: 5px;
+
+ }
+
+.horario{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border-left: 1px solid gray;
+    padding-left: 50px;
+}
+.horario label{
+    font-size: .8em;
+    justify-content: start;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.horario h4{
+    font-weight: 200;
+}
+
+button{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 5px;
+
+    border-radius: 20px;
+    background-color: #d9d9d952;
+    color: #fff;
+    border: none;
+}
+
+button:hover{
+    background-color: #d9d9d9;
+    cursor: pointer;
+    color: #000;
+
+}
+
+.contato{
+    background-color: #111111;
+    height: 95vh;
+
+}
+.contato img{
+    width: 30px;
+    height: 25px;
+    padding-right: 5px;
+}
+.contatos{
+    width: 80%;
+    margin: auto;
+    height: 55vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #1C1C1C;
+
+    color: #fff;
+}
+
+
+.contatoTel, .contatoEmail, .hora{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+.local{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 15px;
+
+}
+
+.maps{
+    width: auto;
+}
+.local a{
+    color: #fff;
+    text-decoration: none;
+}
+.local a:hover{
+    color: rgb(163, 163, 163);
+}
+.contatoEmail{
+    text-decoration: underline;
 }
