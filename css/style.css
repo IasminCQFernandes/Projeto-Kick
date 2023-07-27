@@ -234,3 +234,152 @@ button:hover{
 .contatoEmail{
     text-decoration: underline;
 }
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 0.6em;
+    position: fixed;
+    bottom: 2vh;
+    left: 45%;
+}
+.logo h2{
+    padding: 0%;
+}
+@media (max-width:768px) {
+    .welcome h1{
+        font-size: 1.5em;
+        padding-top: 10%;
+    }
+    .sobre h2, .equipe h2, .agendamento h2, .contato h2{
+
+        font-size: 1.5em;
+
+    }
+    .descricao p{
+
+        font-size: 1em;
+        padding: 4%;
+
+    
+    }
+    .descricao img{
+        right: -10px;
+    
+    }
+    .membros img{
+        width: 150px;
+    }
+    .dados input, .horario input{
+        width: auto;
+
+    }
+    .horario{
+        border: none;
+        padding-right: 15px;
+    }
+    .horario h4{
+        width: 200px;
+        font-size: 0.8em;
+    }
+    .horario label{
+        font-size: 0.7em;
+    }
+
+ 
+    .contato{
+        font-size: 0.8em;
+    }
+    .contato img{
+        width: 25px;
+        height: 20px;
+    }
+    .maps iframe{
+        width: 200px;
+    }
+    
+}
+
+@media (max-width:425px) {
+    .navbar a{
+        font-size: 0.9em;
+    }
+    .welcome h1{
+        font-size: 1.2em;
+        padding-top: 25%;
+    }
+ 
+    .sobre img{
+        display: none;
+        width: 100%;
+    }
+    .descricao p{
+        width: 85%;
+    }
+ 
+    .equipe{
+        height: 95vh;
+        background-color: #111111;
+        width: 100% ;
+        color: #fff;
+    }
+    .membros{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        position: relative;
+        top: 50px;
+    }
+    .membros img{
+       width: 98%;
+
+    }
+    .membro img:hover{
+        top: 30px;
+        width: 150px;
+    }
+    
+    .membros p{
+        text-align: center;
+        font-size: 0.5em;
+    }
+
+    .agenda h3{
+        font-size: 0.9em;
+    }
+    .agenda h5{
+        font-size: 0.6em;
+    }
+   
+    .horario{
+        align-items: start;
+        padding: 0;
+    }
+    .horario input{
+        width: 100%;
+    }
+    .form{
+        flex-direction: column;
+        padding:15px;
+        align-items: center;
+    }
+    .form button{
+
+        margin: auto;
+        margin-top: 10px;
+    }
+    .contatos{
+      display: flex;
+      flex-direction: column;
+    
+    }
+    .maps{
+        display: none;
+    }
+    .logo{
+     
+        left: 38%;
+    }
+    
+}
